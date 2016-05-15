@@ -1,0 +1,169 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    tools:context="com.example.osmas.walkesapp.MainActivity"
+    tools:showIn="@layout/activity_main">
+
+
+    <!--<ImageView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:id="@+id/imageView"
+        android:src="@drawable/mb_bg"
+        android:scaleType="centerCrop"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true"
+        android:foregroundTint="#d6ebe6e6" /> -->
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:textColor="@android:color/white"
+        android:text="Welcome, Jane Doe"
+        android:id="@+id/textViewWelcome"
+        android:paddingLeft="32dp"
+        android:paddingBottom="56dp"
+        />
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:elevation="6dp"
+        android:background="#01949899"
+        android:baselineAligned="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_alignRight="@+id/textViewWelcome"
+        android:layout_alignEnd="@+id/textViewWelcome">
+
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:paddingTop="8dp">
+
+            <ImageButton
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/imageButtonListBooking"
+                android:layout_gravity="center_horizontal"
+                android:src="@android:drawable/ic_menu_view"
+                android:paddingLeft="16dp"
+                android:background="#23ffffff"
+                android:text="this is text" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textAppearance="?android:attr/textAppearanceLarge"
+                android:text="List Bookings"
+                android:id="@+id/textViewListBookings"
+                android:paddingLeft="16dp"
+                 />
+
+
+
+
+        </LinearLayout>
+
+        ////
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:paddingTop="8dp">
+
+            <ImageButton
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/imageButtonAddBooking"
+                android:layout_gravity="center_horizontal"
+                android:src="@android:drawable/ic_menu_add"
+                android:paddingLeft="16dp"
+                android:background="#23ffffff"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textAppearance="?android:attr/textAppearanceLarge"
+                android:text="Add Booking"
+                android:id="@+id/textViewAddBooking"
+                android:paddingLeft="16dp" />
+
+
+
+
+        </LinearLayout>
+
+        /////
+
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:paddingTop="8dp">
+
+            <ImageButton
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/imageButtonSearch"
+                android:layout_gravity="center_horizontal"
+                android:src="@android:drawable/ic_menu_search"
+                android:paddingLeft="16dp"
+                android:background="#23ffffff"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textAppearance="?android:attr/textAppearanceLarge"
+                android:text="Search Bookings"
+                android:id="@+id/textViewSearch"
+                android:paddingLeft="16dp"
+                 />
+
+
+
+
+        </LinearLayout>
+        ////
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:paddingTop="8dp">
+
+            <ImageButton
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/imageButtonPoochPic"
+                android:layout_gravity="center_horizontal"
+                android:paddingLeft="16dp"
+                android:src="@android:drawable/ic_menu_camera"
+                android:background="#23ffffff" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textAppearance="?android:attr/textAppearanceLarge"
+                android:text="Pooch Picture"
+                android:id="@+id/textViewCamera"
+                android:paddingLeft="16dp" />
+
+
+
+
+        </LinearLayout>
+
+
+    </LinearLayout>
+</RelativeLayout>

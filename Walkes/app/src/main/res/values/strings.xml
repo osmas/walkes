@@ -1,0 +1,8 @@
+<resources>
+    <string name="app_name">WalkesApp</string>
+    <string name="action_settings">Settings</string>
+    <string name="title_activity_add_booking">Add Booking</string>
+    <string name="title_activity_list_booking">Bookings List</string>
+    <string name="user_name_default">Osmas</string>
+    <string name="key_user_name">userName</string>
+</resources>
